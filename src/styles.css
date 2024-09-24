@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.auth-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.auth-form h2 {
+  margin-bottom: 1.5rem;
+  color: #0057b8;
+}
+
+.auth-form label {
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #555;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-form .btn-primary {
+  background-color: #0057b8;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.auth-form .btn-secondary {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.auth-form a {
+  display: block;
+  margin-top: 1rem;
+  color: #0057b8;
+  text-align: center;
+}
+
+.qr-code {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.qr-code img {
+  max-width: 150px;
+}
+.qr-code-txt {
+  margin-top: 10px;
+}
+.dashboard-header {
+  background-color: #0057b8;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+}
+
+.dashboard-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.dashboard-header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.dashboard-container {
+  display: flex;
+}
+
+.dashboard-sidebar {
+  background-color: #0057b8;
+  padding: 1rem;
+  min-width: 200px;
+  height: 100vh;
+}
+
+.dashboard-sidebar ul {
+  list-style: none;
+}
+
+.dashboard-sidebar a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dashboard-main {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+      flex-direction: column;
+  }
+
+  .dashboard-sidebar {
+      height: auto;
+      min-width: 100%;
+  }
+
+  .dashboard-main {
+      padding: 1rem;
+  }
+}
+
+.input-error {
+  border-color: red !important;
+}
+
+.div-error {
+  padding-bottom: 15px;
+  color: red;
+  font-weight: bold;
+  font-size: 13px;
+}
+.text-center {
+  text-align: center;
+}
+.recovery-codes-instructions {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  text-align: center;
+  margin-top: 15px;
+}
+.recovery-codes-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 12px;
+  text-align: left;
+}
+
+.recovery-codes-table th,
+.recovery-codes-table td {
+  padding: 5px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.recovery-codes-table th {
+  background-color: #f2f2f2;
+}
+
+.recovery-codes-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.recovery-codes-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.recovery-code {
+  font-size: 14px; /* Tamaño de letra más pequeño para los códigos */
+  text-align: center;
+}
+.show-codes-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+.show-codes-button:hover {
+  background-color: #45a049;
+}
