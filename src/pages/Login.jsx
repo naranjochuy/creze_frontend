@@ -10,8 +10,8 @@ export const Login = () => {
     const navigate = useNavigate()
     const { email, password, onInputChange, formState,
         setErrors, errors } = useForm({
-            email: 'naranjo.chuy@gmail.com',
-            password: '123456'
+            email: '',
+            password: ''
         });
     const [error, setError] = useState('');
     const validationSchema = Yup.object().shape({

@@ -10,8 +10,8 @@ export const SignUp = () => {
     const [step, setStep] = useState(1);
     const { email, password, onInputChange, formState,
         setErrors, errors } = useForm({
-            email: 'naranjo.chuy@gmail.com',
-            password: '123456'
+            email: '',
+            password: ''
         });
     const [error, setError] = useState('');
     const validationSchema = Yup.object().shape({
